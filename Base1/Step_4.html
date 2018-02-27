@@ -9,7 +9,17 @@
             <label for="name">name : </label><input type="text" name="name" id="name"/>
             <label for="surname">surname : </label><input type="text" name="surname" id="surname"/>
             <label for="city">city : </label><input type="text" name="city" id="city"/>
-            <button  name="validate" id="validate">Validate</button>
+            <button  name="validate" id="validate" >Validate</button>
         </form>
+        <script>
+        var a = document.getElementById("name");
+        var b = document.getElementById("surname");
+        var c = document.getElementById("city");
+
+
+       document.getElementById("validate").addEventListener("click", function () {
+            alert("Name: " + a.value + "\n" + "Surname: " + b.value + "\n" + "City: " + c.value);
+        });
+        </script>
     </body>
 </html>

@@ -8,7 +8,19 @@
   <form>
     <label for="password">password : </label><input type="text" name="password" value="" id="password" />
     <label for="confirmation">Confirm : </label><input type="text" name="confirmation" value="" id="confirmation" />
-    <button type="button" name="button" >Test</button>
+    <button type="button" name="button">Test</button>
   </form>
+  <script>
+  var c= document.querySelector("button");
+  c.addEventListener('click', function(){
+    var h = document.getElementById("password");
+    var f = document.getElementById("confirmation");
+
+    if (h.value !== f.value){
+      h.style.border="3px solid red";
+      f.style.border="3px solid red";
+    }
+  })
+  </script>
 </body>
 </html>

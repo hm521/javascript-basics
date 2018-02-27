@@ -1,0 +1,3 @@
+ var c=  document.getElementById("hide").addEventListener('click', function(){
+    var j = document.querySelector("#texte p");
+    j.innerHTML=" ";
